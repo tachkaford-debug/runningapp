@@ -21,7 +21,6 @@ npm install -g vercel
 vercel --prod
 ```
 
-📖 **Подробная инструкция:** [DEPLOY_NOW.md](./DEPLOY_NOW.md)
 
 ## ✨ Основные функции
 

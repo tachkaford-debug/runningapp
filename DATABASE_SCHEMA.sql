@@ -1,6 +1,4 @@
--- Supabase Database Schema для FitnessApp
 
--- Таблица профилей пользователей (расширяет auth.users)
 CREATE TABLE profiles (
   id UUID REFERENCES auth.users(id) PRIMARY KEY,
   username TEXT UNIQUE,
@@ -23,8 +21,7 @@ CREATE TABLE workouts (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- GET /leaderboard — top 100 users by total distance
--- Rebuilt as a materialized snapshot after every workout insert.
+-- GET /leaderboard — топ 100 пользователей по дистанции
 CREATE TABLE leaderboard_snapshot (
   rank          INTEGER NOT NULL,
   user_id       UUID REFERENCES profiles(id) ON DELETE CASCADE,
@@ -36,7 +33,6 @@ CREATE TABLE leaderboard_snapshot (
 
 CREATE INDEX idx_leaderboard_rank ON leaderboard_snapshot(rank);
 
--- Function: rebuild leaderboard (called by trigger after workout insert)
 CREATE OR REPLACE FUNCTION rebuild_leaderboard()
 RETURNS TRIGGER AS $$
 BEGIN

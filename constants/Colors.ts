@@ -1,0 +1,65 @@
+/**
+ * Design System — Dark outdoor fitness aesthetic
+ * Inspired by Nike Run Club + Strava
+ * Primary: Neon lime #C8FF00 on deep black #0D0D0D
+ */
+
+export const Colors = {
+  light: {
+    text: '#FFFFFF',
+    textSecondary: '#A0A0A0',
+    textMuted: '#606060',
+    background: '#0D0D0D',
+    backgroundSecondary: '#1A1A1A',
+    backgroundCard: '#1E1E1E',
+    tint: '#C8FF00',
+    icon: '#A0A0A0',
+    tabIconDefault: '#505050',
+    tabIconSelected: '#C8FF00',
+    primary: '#C8FF00',       // Neon lime
+    primaryDark: '#A8D800',
+    secondary: '#FFFFFF',
+    accent: '#C8FF00',
+    success: '#C8FF00',
+    warning: '#FF9F0A',
+    error: '#FF453A',
+    card: '#1E1E1E',
+    cardElevated: '#252525',
+    border: '#2A2A2A',
+    borderLight: '#333333',
+    shadow: 'rgba(0, 0, 0, 0.6)',
+    overlay: 'rgba(0, 0, 0, 0.7)',
+    // Onboarding teal
+    onboardingBg: '#0E2A2A',
+    onboardingCard: '#163535',
+    onboardingAccent: '#C8FF00',
+  },
+  dark: {
+    text: '#FFFFFF',
+    textSecondary: '#A0A0A0',
+    textMuted: '#606060',
+    background: '#0D0D0D',
+    backgroundSecondary: '#1A1A1A',
+    backgroundCard: '#1E1E1E',
+    tint: '#C8FF00',
+    icon: '#A0A0A0',
+    tabIconDefault: '#505050',
+    tabIconSelected: '#C8FF00',
+    primary: '#C8FF00',
+    primaryDark: '#A8D800',
+    secondary: '#FFFFFF',
+    accent: '#C8FF00',
+    success: '#C8FF00',
+    warning: '#FF9F0A',
+    error: '#FF453A',
+    card: '#1E1E1E',
+    cardElevated: '#252525',
+    border: '#2A2A2A',
+    borderLight: '#333333',
+    shadow: 'rgba(0, 0, 0, 0.6)',
+    overlay: 'rgba(0, 0, 0, 0.7)',
+    onboardingBg: '#0E2A2A',
+    onboardingCard: '#163535',
+    onboardingAccent: '#C8FF00',
+  },
+};

@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "FitnessApp",
+    "slug": "fitnessapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "fitnessapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B35"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fitnessapp.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Приложению необходим доступ к геолокации для отслеживания вашего маршрута во время бега.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Приложению необходим доступ к геолокации для отслеживания вашего маршрута во время бега и в фоновом режиме.",
+        "UIBackgroundModes": ["location", "background-processing"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FF6B35"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Приложению необходим доступ к геолокации для отслеживания вашего маршрута во время бега."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

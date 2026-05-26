@@ -121,7 +121,6 @@ vercel --prod
 
 ### Деплой
 
-Подробное руководство по деплою смотрите в [DEPLOYMENT.md](./DEPLOYMENT.md)
 
 **Быстрый деплой на Vercel:**
 ```bash
